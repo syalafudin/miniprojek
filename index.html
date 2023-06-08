@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="website icon" type="png" href="images/RevoU.png">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav_container">
+      <img class="logo" class="logo" src="images/RevoU.png" alt="Gambar" style="height: 50px;">
+    </div>
+    <a id="home-link" class="active" href="index.html"onclick="showPopup()"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="profile.html" onclick="resetPopupFlag()"><i class="fa fa-fw fa-user"></i> Our Profile</a>
+    <a href="portfolio.html" onclick="resetPopupFlag()"><i class="fa fa-fw fa-book"></i> Portfolio</a>
+    <a href="message.html" onclick="resetPopupFlag()"><i class="fa fa-fw fa-mail-forward"></i> Message Us</a>
+  </div>
+
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <div>
+        <h1>Hai <span id="name"></span>, Welcome To Website</h1>
+      </div>
+      <div>
+        <a class="textReview2"> Ini adalah website latihan</a>
+      </div>
+      <br><br><br>
+      <span class="textReview1">Largest Live Online Learning</span>
+      <span class="textReview1">Comunity</span>
+      <br><br><br>
+      <div>
+        <a class="textReview2"> Recession Proof your Career by learning the most valuable digital skills from the Best
+          in the Industry. 100% Live Online Classes, Career Mentors, and Lifelong Community support to unlock endless
+          opportunities.</a>
+      </div>
+    </div>
+    <div class="flex-item-right">
+      <header class="section-homepage-header"></header>
+    </div>
+  </div>
+
+  <h1>Our Headquarter</h1>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/jakarta.jpg" alt="Gambar" style="width:100%">
+        <p>Jakarta</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/bandung.jpg" alt="Gambar" style="width:100%">
+        <p>Bandung</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/surabaya.jpg" alt="Gambar" style="width:100%">
+        <p>Surabaya</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/wsb.jpg" alt="Gambar" style="width:100%">
+        <p>Wonosobo</p>
+      </div>
+    </div>
+  </div>
+
+
+  <h2>Message Us</h2>
+
+
+  <div class="flex-container">
+    <div class="column" style="width: 100%;">
+      <div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="nama">Nama</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="nama" name="nama" placeholder="Nama.." required data-form-input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lahir">Tanggal Lahir:</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="lahir" name="lahir" required data-form-input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="jeniskelamin" id="jeniskelamin">Jenis Kelamin</label>
+            </div>
+            <div class="col-75">
+              <input type="radio" name="jeniskelamin" value="Laki-laki" required data-form-input>Laki-laki
+              <input type="radio" name="jeniskelamin" value="perempuan">Perempuan
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="pesan">Pesan</label>
+            </div>
+            <div class="col-75">
+              <textarea id="pesan" name="pesan" placeholder="Pesan.." style="height:200px" required
+                data-form-input></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="column" style="width: 100%; padding-left: 100px;" id="form">
+      <table style="width:70%;border-collapse: inherit;">
+        <tr>
+          <th style="padding: 5px;">Current Time</th>
+          <td style="padding: 5px;" id="datetime"></td>
+        </tr>
+        <tr>
+          <th style="padding: 5px;">Nama</th>
+          <td style="padding: 5px;" id="namaOutput"></td>
+        </tr>
+        <tr>
+          <th style="padding: 5px;">Tanggal Lahir</th>
+          <td style="padding: 5px;" id="dateOutput"></td>
+        </tr>
+        <tr>
+          <th style="padding: 5px;">Jenis Kelamin</th>
+          <td style="padding: 5px;" id="jeniskelaminOutput"></td>
+        </tr>
+        <tr>
+          <th style="padding: 5px;">Pesan</th>
+          <td style="padding: 5px;" id="pesanOutput"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <img class="logo" class="logo" src="images/RevoU.png" alt="Gambar" style="float: left; height: 50px;">
+    <p>Syalafudin 2023 © All rights reserved by RevoU</p>
+  </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-homepage-header {
+  background-image: url(https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61c3c9bf388ee90b48cf1782_hero%20banner%20copy.jpg);
+  background-position: 50%;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 22px;
+  padding-top:20rem;
+  padding-bottom: 15.5rem;
+  display: flex;
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_container {
+    width: 100%;
+    max-width: 45.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.navbar a {
+    float: right;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: yellow;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: right;
+        display: block;
+    }
+}
+
+.logo {
+    width: 50px;
+}
+
+h1 {
+    height: auto;
+    font-family: 'Basic';
+    font-style: normal;
+    color: #020E35;
+    font-size: 33px;
+}
+
+.textReview2 {
+  font-family: Maven Pro;
+  font-size: 20px;
+}
+
+.textReview1 {
+  background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 65px;
+  color: yellow;
+}
+
+.group {
+    position: inherit;
+    height: auto;
+    width: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    text-align: left;
+}
+
+.flex-item-left {
+    background-color: white;
+    padding: 10px;
+    flex: 25%;
+}
+
+.flex-item-right {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    flex: 50%;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  img{
+    vertical-align: middle;
+    height: 265px;
+    border-radius: 50%;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+  }
+
+
+  input[type=date]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=radio]{
+    width: auto;
+    
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: yellow;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    margin-top: 20px;
+    color: white;
+    text-align: end;
+  }
+
+  

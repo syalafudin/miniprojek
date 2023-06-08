@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web</title>
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <link rel="stylesheet" href="css/message.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="website icon" type="png" href="images/RevoU.png">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav_container">
+      <img class="logo" class="logo" src="images/RevoU.png" alt="Gambar" style="height: 50px;">
+    </div>
+    <a id="home-link" href="index.html" onclick="resetPopupFlag()"><i class="fa fa-fw fa-home" ></i> Home</a>
+    <a href="profile.html" onclick="resetPopupFlag()"><i class="fa fa-fw fa-user" ></i> Our Profile</a>
+    <a href="portfolio.html" onclick="resetPopupFlag()"><i class="fa fa-fw fa-book"></i> Portfolio</a>
+    <a class="active" href="message.html" ><i class="fa fa-fw fa-mail-forward"></i> Message Us</a>
+  </div>
+
+  <div class="banner">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="project-wrapper">
+      <div class="map">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9308.47814045445!2d106.82639252839738!3d-6.2266453806812105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e4734a8de3%3A0xb2ad7eacc88d7f3e!2sRevoU!5e0!3m2!1sen!2sid!4v1686148150914!5m2!1sen!2sid"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="wrap">
+        <div class="contact">
+          <div class="cont span_2_of_contact">
+            <h5 class="leave">Send Us A Message</h5>
+            <div class="clear"></div>
+            <form method="post" action="contact-post.html">
+              <div class="contact-to">
+                <input type="text" class="text" value="Name..." onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'Name...';}">
+                <input type="text" class="text" value="Email..." onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'Email...';}" style="margin-left: 10px">
+                <input type="text" class="text" value="Subject..." onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'Subject...';}" style="margin-left: 10px">
+              </div>
+              <div class="text2">
+                <textarea value="Message:" onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+              </div>
+              <div>
+                <a href="#" class="submit">Send a Message</a>
+              </div>
+            </form>
+          </div>
+          <div class="lsidebar span_1_of_about">
+            <h5 class="leave">Contact Info</h5>
+            <div class="clear"></div>
+            <div class="contact-list">
+              <ul>
+                <li><img src="images/loc.png" alt="">
+                  <p>Go Work, Menara Rajawali, Jl. DR. Ide Anak Agung Gde Agung, RT.5/RW.2, Kuningan, Kuningan Tim.,
+                    Kecamatan Setiabudi, Jakarta, Daerah Khusus Ibukota Jakarta 12950</p>
+                  <div class="clear"></div>
+                </li>
+                <li><img src="images/ig.png" alt="">
+                  <p>Instagram: revou_id</p>
+                  <div class="clear"></div>
+                </li>
+                <li><img src="images/mail.png" alt="">
+                  <p>Email: <span class="yellow1"><a href="#">admissions@revou.co</a></span></p>
+                  <div class="clear"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img class="logo" class="logo" src="images/RevoU.png" alt="Gambar" style="float: left; height: 50px;" >
+    <p>Syalafudin 2023 © All rights reserved by RevoU</p>
+  </div>
+</body>
+<script src="js/script.js"></script>
+</html>
